@@ -3,3 +3,4 @@
  */
 
 console.log('222222');
+console.log('测试是否同步到dist文件和浏览器中');

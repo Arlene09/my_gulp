@@ -48,9 +48,9 @@ gulp.task('html', function() {
     }));
 });
 
-var bowserSync = require('browser-sync');
+var browserSync = require('browser-sync');
 gulp.task('serve', function() {
-  bowserSync({
+  browserSync({
       server: {
         baseDir: ['dist'],
       },
@@ -62,7 +62,7 @@ gulp.task('serve', function() {
   );
 
   gulp.watch('src/css/*.less', ['style']);
-  gulp.watch('src/js/*.js', ['script']);
+  gulp.watch('src/js/*.js', ['js']);
   gulp.watch('src/image/*.*', ['image']);
   gulp.watch('src/*.html', ['html']);
 
